@@ -2433,6 +2433,7 @@ function IssuesPageContent() {
 
       {/* Issue Detail Modal */}
       <IssueDetailModal
+        key={detailIssueId ?? 'none'}
         issueId={detailIssueId}
         open={detailIssueId !== null}
         onClose={() => setDetailIssueId(null)}
